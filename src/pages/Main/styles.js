@@ -1,5 +1,6 @@
-import styled from 'styled-components/native';
 import { RectButton } from 'react-native-gesture-handler';
+
+import styled from 'styled-components/native';
 
 export const Container = styled.View`
   flex: 1;
@@ -32,6 +33,7 @@ export const SubmitButton = styled(RectButton)`
   margin-left: 10px;
   padding: 0 12px;
   background: #7159c1;
+  opacity: ${props => (props.loading ? 0.7 : 1)};
 `;
 
 export const List = styled.FlatList.attrs({
@@ -43,10 +45,6 @@ export const List = styled.FlatList.attrs({
 export const User = styled.View`
   align-items: center;
   margin: 0 20px 30px;
-`;
-
-export const Teste = styled.View`
-  flex-direction: row;
 `;
 
 export const Avatar = styled.Image`

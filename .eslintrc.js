@@ -38,6 +38,7 @@ module.exports = {
       { // example configuration
           newlinesBetween: 'always',
           groups: [
+              '/^react/',
               'module',
               '/^@shared/',
               ['parent', 'sibling', 'index'],
